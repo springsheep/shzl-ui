@@ -4,7 +4,7 @@
  * @Author: 张鹏
  * @Date: 2021-08-31 10:56:45
  * @LastEditors: 张鹏
- * @LastEditTime: 2021-08-31 15:10:40
+ * @LastEditTime: 2021-08-31 15:31:48
  */
 /*
  * @Author: your name
@@ -19,8 +19,8 @@ module.exports = {
    description: '社会治理',
    themeConfig: {
       nav: [
-         { text: 'cui', link: 'http://10.12.102.194/cui/#/zh-CN/rate' },
-         { text: 'npm仓库', link: 'http://10.12.102.194:4873/' },
+         { text: 'cui', link: 'https://github.com/springsheep/shzl-ui' },
+         { text: 'npm仓库', link: 'https://www.npmjs.com/package/shzl-ui' },
       ],
       sidebar: [
          {
