@@ -4,7 +4,7 @@
  * @Author: 张鹏
  * @Date: 2021-08-31 10:57:15
  * @LastEditors: 张鹏
- * @LastEditTime: 2021-08-31 15:26:33
+ * @LastEditTime: 2021-08-31 15:41:32
 -->
 
 本插件仿照[Angular 的 color-picker]("http://zhangbobell.github.io/color-picker/)写来
@@ -41,3 +41,9 @@
 ```js
 <shzlColorPicker v-model='color' v-on:change='headleChangeColor'></shzlColorPicker>
 ```
+
+## 特点
+
+1. 简单易用，UI 在原插件基础上优化增加了圆角和过渡动画
+2. 提供以 `npm` 的形式安装提供全局组件
+3. 在支持 html5 input[type='color'] 的浏览器实现了「更多颜色」的功能
