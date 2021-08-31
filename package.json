@@ -1,6 +1,6 @@
 {
-   "name": "@shzl/shzl-ui",
-   "version": "0.0.4",
+   "name": "shzl-ui",
+   "version": "0.0.6",
    "description": "社会治理二部的ui组件库",
    "main": "lib/shzl-ui.umd.min.js",
    "keyword": "shzl-ui",
@@ -11,11 +11,19 @@
       "serve": "vue-cli-service serve",
       "build": "vue-cli-service build",
       "lint": "vue-cli-service lint",
-      "lib": "vue-cli-service build --target lib --name shzl-ui --dest lib packages/index.js"
+      "lib": "vue-cli-service build --target lib --name shzl-ui --dest lib packages/index.js",
+      "doc": "npx vuepress dev docs",
+      "build:doc": "npx vuepress build docs"
    },
    "dependencies": {
+      "clipboard": "^2.0.8",
+      "element-ui": "^2.15.5",
       "highlight.js": "^9.12.0",
-      "vue": "^2.5.17"
+      "qiniu-js": "^3.3.3",
+      "viewerjs": "^1.10.1",
+      "vue": "^2.5.17",
+      "vue-i18n": "^5.0.3",
+      "vuedraggable": "^2.24.3"
    },
    "devDependencies": {
       "@vue/cli-plugin-babel": "^3.0.1",
