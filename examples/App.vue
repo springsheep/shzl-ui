@@ -4,19 +4,20 @@
  * @Author: 张鹏
  * @Date: 2021-02-24 14:31:51
  * @LastEditors: 张鹏
- * @LastEditTime: 2021-08-31 10:14:27
+ * @LastEditTime: 2021-08-31 15:28:43
 -->
 <template>
    <div id="app" class="app">
-      <fm-making-form ref="makingform" style="height: 100%;" preview generate-code generate-json @getJson="getJson" @back="$router.back()">
+      <!-- <shzlBpmn :modelData="modelData" ref="bpmn" class="content" />
+      <shzl-making-form ref="makingform" style="height: 100%;" preview generate-code generate-json @getJson="getJson" @back="$router.back()">
          <template slot="action"> </template>
-      </fm-making-form>
-      <!-- <div class="page-header">
-         <h1>vColorPicker</h1>
-         <h2>基于 Vue 的颜色选择器插件</h2>
-         <a href="https://github.com/zuley/vue-color-picker" class="btn" target="_blank">View on GitHub</a>
+      </shzl-making-form> -->
+      <div class="page-header">
+         <h1>shzlUi</h1>
+         <h2>基于 社会治理二部的 组件库</h2>
+         <a href="https://www.npmjs.com/package/shzl-ui" class="btn" target="_blank">View on GitHub</a>
       </div>
-      <div class="page-content" v-hljs>
+      <!-- <div class="page-content" v-hljs>
          <h1>vColorPicker</h1>
          <p>
             本插件仿照<code>Angular</code>的<code><a href="http://zhangbobell.github.io/color-picker/" target="_blank">color-picker</a></code
@@ -69,7 +70,7 @@ Vue.use(vcolorpicker)
 </pre
          >
       </div> -->
-      <div class="page-footer">Vue-color-picker 插件由<a href="http://www.rxshc.com/" target="_blank">猪不乐意</a>编写</div>
+      <!-- <div class="page-footer">Vue-color-picker 插件由<a href="http://www.rxshc.com/" target="_blank">猪不乐意</a>编写</div> -->
    </div>
 </template>
 
@@ -79,6 +80,15 @@ export default {
       return {
          color: '#ff0000',
          color2: '#000000',
+         modelData: {
+            id: undefined,
+            editor: undefined,
+            key: 'processId_1',
+            name: 'processName_1',
+            category: '',
+            description: 'description_1',
+            xml: '',
+         },
       };
    },
    methods: {
@@ -108,7 +118,6 @@ export default {
 </style>
 <style lang="scss" scoped>
 .app {
-   min-height: 100%;
    background-color: #fff;
    border: 20px solid #f0f2f5 !important;
    padding: 20px;

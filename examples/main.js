@@ -4,7 +4,7 @@
  * @Author: 张鹏
  * @Date: 2021-02-24 14:31:51
  * @LastEditors: 张鹏
- * @LastEditTime: 2021-08-31 10:33:17
+ * @LastEditTime: 2021-08-31 14:29:17
  */
 import Vue from 'vue';
 import App from './App.vue';
@@ -16,10 +16,9 @@ Vue.use(ElementUI, {
 });
 import hljs from 'highlight.js';
 import 'highlight.js/styles/railscasts.css';
-// import './../packages/index.css';
-
-import shzlUi from 'shzl-ui';
+import shzlUi from './../packages/index';
 Vue.use(shzlUi);
+
 Vue.directive('hljs', (el) => {
    let blocks = el.querySelectorAll('pre');
    Array.prototype.forEach.call(blocks, hljs.highlightBlock);

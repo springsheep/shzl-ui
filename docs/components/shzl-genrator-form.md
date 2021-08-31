@@ -4,12 +4,12 @@
  * @Author: 张鹏
  * @Date: 2021-08-31 10:51:40
  * @LastEditors: 张鹏
- * @LastEditTime: 2021-08-31 11:10:34
+ * @LastEditTime: 2021-08-31 11:24:29
 -->
 
 # 组件
 
-## 表单设计器（MakingForm）
+## 表单设计器(shzlMakingForm)
 
 ### API
 
@@ -34,7 +34,7 @@
 
 #### 方法
 
-通过 [ref](https://cn.vuejs.org/v2/api/#ref) 可以获取到 MakingForm 实例并调用实例方法
+通过 [ref](https://cn.vuejs.org/v2/api/#ref) 可以获取到 shzl-making-form 实例并调用实例方法
 
 | 方法名  | 说明                                     | 参数                                      |
 | ------- | ---------------------------------------- | ----------------------------------------- |
@@ -49,12 +49,12 @@
 
 ```html
 <template>
-   <fm-making-form ref="makingform" style="height: 500px;">
+   <shzl-making-form ref="makingform" style="height: 500px;">
       <template slot="action">
          <!-- 自定义操作区域插槽 -->
          <el-button type="text" icon="el-icon-upload">保存</el-button>
       </template>
-   </fm-making-form>
+   </shzl-making-form>
 </template>
 ```
 
@@ -62,28 +62,28 @@
 
 ```html
 <template>
-   <fm-making-form
+   <shzl-making-form
       ref="makingform"
       style="height: 500px;"
       :basic-fields="['input', 'textarea']"
       :advance-fields="['blank', 'fileupload']"
       :layout-fields="[]"
    >
-   </fm-making-form>
+   </shzl-making-form>
 </template>
 ```
 
 #### 获取 `json` 数据
 
 ```html
-<fm-making-form ref="makingform" style="height: 500px;" preview generate-code generate-json> </fm-making-form>
+<shzl-making-form ref="makingform" style="height: 500px;" preview generate-code generate-json> </shzl-making-form>
 ```
 
 ```js
 const json = this.$refs.makingform.getJSON();
 ```
 
-## 表单生成器（GenerateForm）
+## 表单生成器(shzlGenerateForm)
 
 ### API
 
@@ -119,7 +119,7 @@ const json = this.$refs.makingform.getJSON();
 ```html
 <template>
    <div>
-      <fm-generate-form :data="jsonData" ref="generateForm"> </fm-generate-form>
+      <shzl-generate-form :data="jsonData" ref="generateForm"> </shzl-generate-form>
       <el-button type="primary" @click="handleSubmit">Submit</el-button>
    </div>
 </template>
@@ -179,7 +179,7 @@ export default {
 ```html
 <template>
    <div>
-      <fm-generate-form :data="jsonData" :value="editData" ref="generateForm"> </fm-generate-form>
+      <shzl-generate-form :data="jsonData" :value="editData" ref="generateForm"> </shzl-generate-form>
    </div>
 </template>
 ```
@@ -234,7 +234,7 @@ export default {
 ```html
 <template>
    <div>
-      <fm-generate-form :data="jsonData" @on-change="onChange" :value="formData" ref="generateForm"> </fm-generate-form>
+      <shzl-generate-form :data="jsonData" @on-change="onChange" :value="formData" ref="generateForm"> </shzl-generate-form>
    </div>
 </template>
 ```

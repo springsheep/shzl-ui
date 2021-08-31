@@ -4,7 +4,7 @@
  * @Author: 张鹏
  * @Date: 2021-08-31 10:56:45
  * @LastEditors: 张鹏
- * @LastEditTime: 2021-08-31 10:57:13
+ * @LastEditTime: 2021-08-31 15:10:40
  */
 /*
  * @Author: your name
@@ -32,6 +32,7 @@ module.exports = {
             title: '组件',
 
             children: [
+               { title: '工作流', path: '/components/shzl-bpmn' },
                { title: '颜色选择器', path: '/components/shzl-color-picker' },
                { title: '自定义表单', path: '/components/shzl-genrator-form' },
             ],

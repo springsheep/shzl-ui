@@ -4,7 +4,7 @@
  * @Author: 张鹏
  * @Date: 2021-02-24 14:31:51
  * @LastEditors: 张鹏
- * @LastEditTime: 2021-08-31 11:02:14
+ * @LastEditTime: 2021-08-31 13:48:35
  */
 import VueI18n from 'vue-i18n';
 import enUS from './shzl-genrator-form/lang/en-US';
@@ -31,11 +31,12 @@ const loadLang = function(Vue, lang, locale, i18n) {
 // 导入颜色选择器组件
 import shzlColorPicker from './shzl-color-picker';
 import shzlGenratorForm from './shzl-genrator-form';
+import shzlBpmn from './shzl-bpmn';
 
 let shzlMakingForm = shzlGenratorForm.shzlMakingForm;
 let shzlGenerateForm = shzlGenratorForm.shzlGenerateForm;
 // 存储组件列表
-const components = [shzlColorPicker, shzlMakingForm, shzlGenerateForm];
+const components = [shzlColorPicker, shzlMakingForm, shzlGenerateForm, shzlBpmn];
 
 // 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，则所有的组件都将被注册
 const install = function(
@@ -65,4 +66,5 @@ export default {
    shzlColorPicker,
    shzlMakingForm,
    shzlGenerateForm,
+   shzlBpmn,
 };
